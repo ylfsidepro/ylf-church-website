@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Brand CSS Variables ─────────────────────────────────────── */
+:root {
+  --divine-purple: #6b4ba1;
+  --holy-gold:     #f4a535;
+  --spirit-blue:   #4a90e2;
+  --deep-indigo:   #3d2c5c;
+  --soft-lavender: #d6c7e3;
+  --lavender-light:#f0eaf8;
+  --cream:         #fdfaf5;
+  --gold-dark:     #c47e15;
+  --purple-light:  #8b6bbf;
+}
+
+/* ─── Base ────────────────────────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Jost', sans-serif;
+  background-color: var(--cream);
+  color: #2a1f3d;
+  overflow-x: hidden;
+}
+
+/* ─── Custom Scrollbar ────────────────────────────────────────── */
+::-webkit-scrollbar       { width: 5px; }
+::-webkit-scrollbar-track { background: var(--lavender-light); }
+::-webkit-scrollbar-thumb { background: var(--divine-purple); border-radius: 3px; }
+
+/* ─── Scroll Reveal ───────────────────────────────────────────── */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Rich Text (Portable Text) ───────────────────────────────── */
+.prose-ylf h2 { font-family: 'Playfair Display', serif; color: var(--deep-indigo); margin: 2rem 0 1rem; }
+.prose-ylf h3 { font-family: 'Playfair Display', serif; color: var(--divine-purple); margin: 1.5rem 0 .75rem; }
+.prose-ylf p  { line-height: 1.85; margin-bottom: 1.2rem; color: #6b5e7e; }
+.prose-ylf blockquote {
+  border-left: 4px solid var(--holy-gold);
+  padding: 1rem 1.5rem;
+  background: var(--lavender-light);
+  border-radius: 0 8px 8px 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  margin: 1.5rem 0;
+}
+.prose-ylf strong { color: var(--deep-indigo); }
+.prose-ylf a { color: var(--divine-purple); font-weight: 600; }
