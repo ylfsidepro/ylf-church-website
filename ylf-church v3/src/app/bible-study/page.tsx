@@ -27,11 +27,10 @@ export default function BibleStudyPage() {
           tag="Weekly Gatherings"
           title="Bible Study"
           subtitle="Every week, the Word comes alive. Come ready to encounter God."
-          variant="light"
+          light
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12 items-start">
-
           {/* Info Cards */}
           <div className="flex flex-col gap-5">
             {[
@@ -73,7 +72,7 @@ export default function BibleStudyPage() {
 
                   <p
                     className="text-sm leading-relaxed"
-                    style={{ color: 'var(--muted,#6b5e7e)' }}
+                    style={{ color: 'var(--muted, #6b5e7e)' }}
                   >
                     {text}
                   </p>
@@ -81,17 +80,17 @@ export default function BibleStudyPage() {
               </div>
             ))}
 
-           <a
-  href="/connect"
-  className="inline-flex items-center justify-center gap-3 px-7 py-3 rounded-xl font-semibold text-sm transition-all hover:-translate-y-0.5 no-underline mx-auto"
-  style={{
-    background:
-      'linear-gradient(135deg,var(--holy-gold),#c47e15)',
-    color: 'var(--deep-indigo)',
-  }}
->
-  🎥 Register to Join
-</a>
+            <a
+              href="/connect"
+              className="inline-flex items-center justify-center gap-3 px-7 py-3 rounded-xl font-semibold text-sm transition-all hover:-translate-y-0.5 no-underline mx-auto"
+              style={{
+                background:
+                  'linear-gradient(135deg, var(--holy-gold), #c47e15)',
+                color: 'var(--deep-indigo)',
+              }}
+            >
+              🎥 Register to Join
+            </a>
           </div>
 
           {/* Visual Card */}
@@ -99,7 +98,7 @@ export default function BibleStudyPage() {
             className="rounded-3xl text-white shadow-xl relative overflow-hidden"
             style={{
               background:
-                'linear-gradient(145deg,var(--divine-purple),var(--deep-indigo))',
+                'linear-gradient(145deg, var(--divine-purple), var(--deep-indigo))',
             }}
           >
             {/* Scripture */}
@@ -150,7 +149,7 @@ export default function BibleStudyPage() {
                 className="flex items-center justify-center gap-2 w-full py-3 rounded-xl font-semibold text-sm transition-all hover:-translate-y-0.5 no-underline"
                 style={{
                   background:
-                    'linear-gradient(135deg,var(--holy-gold),#c47e15)',
+                    'linear-gradient(135deg, var(--holy-gold), #c47e15)',
                   color: 'var(--deep-indigo)',
                 }}
               >
