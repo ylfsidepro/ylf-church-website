@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Brand CSS Variables ─────────────────────────────────────── */
+:root {
+  --divine-purple:   #9b2335; /* crimson red */
+  --deep-indigo:     #5a0f1a; /* dark burgundy */
+  --spirit-blue:     #e07b2a; /* warm orange */
+  --soft-lavender:   #f5c4c4; /* blush rose */
+  --lavender-light:  #fdf0e8; /* warm cream */
+
+  --holy-gold:       #e07b2a; /* mapped to spirit orange */
+  --cream:           #fdf0e8;
+
+  --gold-dark:       #c25f12;
+  --purple-light:    #c85a63;
+}
+
+/* ─── Base ────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  background-color: var(--lavender-light);
+  color: var(--deep-indigo);
+  overflow-x: hidden;
+}
+
+/* ─── Custom Scrollbar ────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--soft-lavender);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--divine-purple);
+  border-radius: 3px;
+}
+
+/* ─── Scroll Reveal ───────────────────────────────────────────── */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Rich Text (Portable Text) ───────────────────────────────── */
+.prose-ylf h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--deep-indigo);
+  margin: 2rem 0 1rem;
+}
+
+.prose-ylf h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--divine-purple);
+  margin: 1.5rem 0 0.75rem;
+}
+
+.prose-ylf p {
+  line-height: 1.85;
+  margin-bottom: 1.2rem;
+  color: #5a3a3f;
+}
+
+.prose-ylf blockquote {
+  border-left: 4px solid var(--holy-gold);
+  padding: 1rem 1.5rem;
+  background: var(--soft-lavender);
+  border-radius: 0 8px 8px 0;
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  margin: 1.5rem 0;
+  color: var(--deep-indigo);
+}
+
+.prose-ylf strong {
+  color: var(--deep-indigo);
+}
+
+.prose-ylf a {
+  color: var(--divine-purple);
+  font-weight: 600;
+}
+
+/* ─── Optional UI Polish ─────────────────────────────────────── */
+button, .btn {
+  transition: all 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
