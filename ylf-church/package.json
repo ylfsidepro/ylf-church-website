@@ -1,60 +1,39 @@
-# npm resolution error report
-
-While resolving: ylf-church@1.0.0
-Found: react@18.2.0
-node_modules/react
-  react@"18.2.0" from the root project
-  peer react@"^18 || >=19.0.0-0" from @sanity/ui@2.16.22
-  node_modules/@sanity/ui
-    peer @sanity/ui@"^2.16.7" from next-sanity@9.12.3
-    node_modules/next-sanity
-      next-sanity@"^9.0.0" from the root project
-  peer react@"^18.2.0" from react-dom@18.2.0
-  node_modules/react-dom
-    react-dom@"18.2.0" from the root project
-    peer react-dom@"^18 || >=19.0.0-0" from @sanity/ui@2.16.22
-    node_modules/@sanity/ui
-      peer @sanity/ui@"^2.16.7" from next-sanity@9.12.3
-      node_modules/next-sanity
-        next-sanity@"^9.0.0" from the root project
-    peerOptional react-dom@">= 16.8.0" from styled-components@6.4.1
-    node_modules/styled-components
-      peer styled-components@"^6.1" from next-sanity@9.12.3
-      node_modules/next-sanity
-        next-sanity@"^9.0.0" from the root project
-      peer styled-components@"^5.2 || ^6" from @sanity/ui@2.16.22
-      node_modules/@sanity/ui
-        peer @sanity/ui@"^2.16.7" from next-sanity@9.12.3
-        node_modules/next-sanity
-          next-sanity@"^9.0.0" from the root project
-    peer react-dom@"^18.2.0" from next@14.2.33
-    node_modules/next
-      next@"14.2.33" from the root project
-      peer next@"^14.2 || ^15.0.0-0" from next-sanity@9.12.3
-      node_modules/next-sanity
-        next-sanity@"^9.0.0" from the root project
-  peer react@">= 16.8.0" from styled-components@6.4.1
-  node_modules/styled-components
-    peer styled-components@"^6.1" from next-sanity@9.12.3
-    node_modules/next-sanity
-      next-sanity@"^9.0.0" from the root project
-    peer styled-components@"^5.2 || ^6" from @sanity/ui@2.16.22
-    node_modules/@sanity/ui
-      peer @sanity/ui@"^2.16.7" from next-sanity@9.12.3
-      node_modules/next-sanity
-        next-sanity@"^9.0.0" from the root project
-  peer react@"^18.2.0" from next@14.2.33
-  node_modules/next
-    next@"14.2.33" from the root project
-    peer next@"^14.2 || ^15.0.0-0" from next-sanity@9.12.3
-    node_modules/next-sanity
-      next-sanity@"^9.0.0" from the root project
-
-Could not resolve dependency:
-peer react@"^18.3 || ^19.0.0-0" from next-sanity@9.12.3
-node_modules/next-sanity
-  next-sanity@"^9.0.0" from the root project
-
-Fix the upstream dependency conflict, or retry
-this command with --force or --legacy-peer-deps
-to accept an incorrect (and potentially broken) dependency resolution.
+{
+  "name": "ylf-church",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@portabletext/react": "^3.0.0",
+    "@sanity/image-url": "^1.0.0",
+    "@sanity/vision": "^3.0.0",
+    "googleapis": "^140.0.0",
+    "lucide-react": "^0.469.0",
+    "next": "14.2.33",
+    "next-sanity": "^9.12.3",
+    "next-sitemap": "^4.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-is": "^18.3.1",
+    "sanity": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.33",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}
