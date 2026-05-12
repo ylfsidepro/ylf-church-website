@@ -42,7 +42,7 @@ export default function ConnectPage() {
               { icon:'📍', label:'Location',          value:'Jamshedpur, Jharkhand, India' },
               { icon:'📞', label:'Phone / WhatsApp',  value:'+91 9955911759' },
               { icon:'📺', label:'Online Gatherings', value:'Bible Study & Activities on Zoom' },
-              { icon:'✉️', label:'Email',             value:'yeshualovejsr@gmail.com' },
+              { icon:'✉️', label:'Email',             value:'yeshuaslovejsr@gmail.com' },
             ].map(({ icon, label, value }) => (
               <div key={label} className="flex items-center gap-4 mb-5">
                 <div className="w-11 h-11 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
