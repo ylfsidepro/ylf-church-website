@@ -32,7 +32,7 @@ let msgId = 0
 
 // ✅ IMAGE ANGEL ICON (FROM PUBLIC FOLDER)
 const AngelIcon = () => (
-  <Image
+  <img
     src="/images/Angel.jpg"
     alt="Angel Icon"
     width={26}
