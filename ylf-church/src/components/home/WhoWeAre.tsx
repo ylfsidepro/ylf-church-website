@@ -44,7 +44,7 @@ export function WhoWeAre() {
         <div className="relative h-[280px] w-[580px]">
           {/* Main image card */}
           <div className="absolute inset-0 rounded-3xl overflow-hidden"
-            style={{ boxShadow:'0 2px 28px rgba(107,75,161,0.22)' }}>
+            style={{ boxShadow:'0 3px 32px rgba(107,75,161,0.22)' }}>
             {/* Generic community image — replace src with a real photo */}
             <img
               src="/images/Team.jpeg"
