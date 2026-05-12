@@ -41,10 +41,10 @@ export function WhoWeAre() {
         </div>
              
         {/* Visual — two stacked image panels */}
-        <div className="relative h-[426px] w-[880px]">
+        <div className="relative h-[329px] w-[680px]">
           {/* Main image card */}
           <div className="absolute inset-0 rounded-3xl overflow-hidden"
-            style={{ boxShadow:'0 8px 40px rgba(107,75,161,0.22)' }}>
+            style={{ boxShadow:'0 6px 38px rgba(107,75,161,0.22)' }}>
             {/* Generic community image — replace src with a real photo */}
             <img
               src="/images/Team.jpeg"
