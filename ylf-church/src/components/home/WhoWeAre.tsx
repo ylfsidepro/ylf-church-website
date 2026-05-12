@@ -54,7 +54,7 @@ export function WhoWeAre() {
             />
                 {/* Overlay with scripture */}
            <div
-  className="absolute inset-0 flex flex-col items-center text-center px-6 pt-4"
+  className="absolute inset-0 flex flex-col items-center text-center px-2 pt-2"
   style={{
     background:
       "linear-gradient(to bottom, rgba(20,15,35,0.72) 0%, rgba(20,15,35,0.28) 38%, transparent 75%)"
