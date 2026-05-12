@@ -41,7 +41,7 @@ export function WhoWeAre() {
         </div>
              
         {/* Visual — two stacked image panels */}
-        <div className="relative h-[329px] w-[680px]">
+        <div className="relative h-[426px] w-[880px]">
           {/* Main image card */}
           <div className="absolute inset-0 rounded-3xl overflow-hidden"
             style={{ boxShadow:'0 8px 40px rgba(107,75,161,0.22)' }}>
