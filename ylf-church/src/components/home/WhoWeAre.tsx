@@ -41,10 +41,10 @@ export function WhoWeAre() {
         </div>
              
         {/* Visual — two stacked image panels */}
-        <div className="relative h-[329px] w-[680px]">
+        <div className="relative h-[232px] w-[480px]">
           {/* Main image card */}
           <div className="absolute inset-0 rounded-3xl overflow-hidden"
-            style={{ boxShadow:'0 6px 38px rgba(107,75,161,0.22)' }}>
+            style={{ boxShadow:'0 4px 34px rgba(107,75,161,0.22)' }}>
             {/* Generic community image — replace src with a real photo */}
             <img
               src="/images/Team.jpeg"
@@ -55,7 +55,7 @@ export function WhoWeAre() {
                 {/* Overlay with scripture */}
             <div className="absolute inset-0 flex flex-col justify-start p-1 items-center"
               style={{ background:"linear-gradient(to bottom, rgba(20,15,35,0.88) 0%, rgba(20,15,35,0.45) 35%, transparent 70%)"}}>
-              <blockquote className="font-display italic text-3xl text-white leading-relaxed drop-shadow-lg max-w-3xl">
+              <blockquote className="font-display italic text-2xl text-white leading-relaxed drop-shadow-lg max-w-2xl">
                 &quot;For where two or three gather in my name,there am I with them.&quot;
               </blockquote>
               <cite className="block mt-0 text-lg tracking-widest uppercase not-italic"
