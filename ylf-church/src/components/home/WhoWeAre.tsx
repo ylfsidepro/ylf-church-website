@@ -55,7 +55,7 @@ export function WhoWeAre() {
                 {/* Overlay with scripture */}
             <div className="absolute inset-0 flex flex-col justify-start p-1 items-center"
               style={{ background:"linear-gradient(to bottom, rgba(20,15,35,0.88) 0%, rgba(20,15,35,0.45) 35%, transparent 70%)"}}>
-              <blockquote className="font-display italic text-1xl text-white leading-relaxed drop-shadow-lg max-w-1xl">
+              <blockquote className="font-display italic text-2xl text-white leading-relaxed drop-shadow-lg max-w-2xl">
                 &quot;For where two or three gather in my name,there am I with them.&quot;
               </blockquote>
               <cite className="block mt-0 text-lg tracking-widest uppercase not-italic"
