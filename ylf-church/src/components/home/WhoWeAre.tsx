@@ -58,7 +58,7 @@ export function WhoWeAre() {
               <blockquote className="font-display italic text-3xl text-white leading-relaxed drop-shadow-lg max-w-3xl">
                 &quot;For where two or three gather in my name,there am I with them.&quot;
               </blockquote>
-              <cite className="block mt-1 text-lg tracking-widest uppercase not-italic"
+              <cite className="block mt-1 text-[12px] md:text-sm tracking-[0.18em] uppercase not-italic font-semibold"
                 style={{ color:'var(--holy-gold)' }}>
                 — Matthew 18:20
               </cite>
