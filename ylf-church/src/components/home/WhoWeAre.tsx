@@ -53,16 +53,25 @@ export function WhoWeAre() {
               loading="lazy"
             />
                 {/* Overlay with scripture */}
-            <div className="absolute inset-0 flex flex-col justify-start p-1 items-center"
-              style={{ background:"linear-gradient(to bottom, rgba(20,15,35,0.88) 0%, rgba(20,15,35,0.45) 35%, transparent 70%)"}}>
-              <blockquote className="font-display italic text-3xl text-white leading-relaxed drop-shadow-lg max-w-3xl">
-                &quot;For where two or three gather in my name,there am I with them.&quot;
-              </blockquote>
-              <cite className="block mt-1 text-[12px] md:text-sm tracking-[0.18em] uppercase not-italic font-semibold"
-                style={{ color:'var(--holy-gold)' }}>
-                — Matthew 18:20
-              </cite>
-            </div>
+           <div
+  className="absolute inset-0 flex flex-col items-center text-center px-8 pt-6"
+  style={{
+    background:
+      "linear-gradient(to bottom, rgba(20,15,35,0.72) 0%, rgba(20,15,35,0.28) 38%, transparent 75%)"
+  }}
+>
+  <blockquote className="max-w-[90%] font-serif italic text-white text-lg md:text-3xl leading-snug drop-shadow-lg">
+    &quot;For where two or three gather in my name,
+    there am I with them.&quot;
+  </blockquote>
+
+  <cite
+    className="mt-3 text-[11px] md:text-sm font-semibold tracking-[0.25em] uppercase"
+    style={{ color: '#d6a85f' }}
+  >
+    — Matthew 18:20
+  </cite>
+</div>
           </div>
 
           
