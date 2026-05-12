@@ -60,13 +60,13 @@ export function WhoWeAre() {
       "linear-gradient(to bottom, rgba(20,15,35,0.72) 0%, rgba(20,15,35,0.28) 38%, transparent 75%)"
   }}
 >
-  <blockquote className="max-w-[90%] font-serif italic text-white text-lg md:text-3xl leading-snug drop-shadow-lg">
+  <blockquote className="max-w-[90%] font-serif italic text-white text-lg md:text-2xl leading-snug drop-shadow-lg">
     &quot;For where two or three gather in my name,
     there am I with them.&quot;
   </blockquote>
 
   <cite
-    className="mt-3 text-[11px] md:text-sm font-semibold tracking-[0.25em] uppercase"
+    className="mt-2 text-[11px] md:text-sm font-semibold tracking-[0.25em] uppercase"
     style={{ color: '#d6a85f' }}
   >
     — Matthew 18:20
