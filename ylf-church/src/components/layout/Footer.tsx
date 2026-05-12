@@ -143,8 +143,8 @@ export function Footer() {
               Jamshedpur<br />Jharkhand, India
             </p>
 
-            <a href="mailto:yeshualovejsr@gmail.com" className="footer-nav-link">
-              yeshualovejsr@gmail.com
+            <a href="mailto:yeshuaslovejsr@gmail.com" className="footer-nav-link">
+              yeshuaslovejsr@gmail.com
             </a>
 
             <Link href="/connect" className="footer-nav-link">Prayer Requests</Link>
