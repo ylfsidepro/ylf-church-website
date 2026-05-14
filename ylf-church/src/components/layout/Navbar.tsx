@@ -64,7 +64,7 @@ export function Navbar() {
               className="text-[0.6rem] tracking-[0.15em] uppercase mt-0.5"
               style={{ color: 'var(--spirit-blue)' }}
             >
-              Jamshedpur · Jharkhand · India
+              &nbsp &nbsp Jamshedpur · Jharkhand · India
             </span>
           </div>
         </Link>
