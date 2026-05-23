@@ -23,12 +23,13 @@ export default function BibleStudyPage() {
       style={{ background: 'var(--cream)' }}
     >
       <div className="max-w-5xl mx-auto">
-        <SectionHeader
-          tag="Weekly Gatherings"
-          title="Bible Study"
-          subtitle="Every week, the Word comes alive. Come ready to encounter God."
-          light
-        />
+        <div className="rounded-3xl border border-white/70 bg-white/35 p-7 shadow-sm backdrop-blur-sm md:p-9">
+          <SectionHeader
+            tag="Weekly Gatherings"
+            title="Bible Study"
+            subtitle="Every week, the Word comes alive. Come ready to encounter God."
+          />
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12 items-start">
           {/* Info Cards */}
