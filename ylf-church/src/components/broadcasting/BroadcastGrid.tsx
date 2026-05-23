@@ -1,5 +1,6 @@
 import type { BroadcastVideo } from '@/types'
 import { YouTubeEmbed } from './YouTubeEmbed'
+import { CalendarDays } from 'lucide-react'
 
 interface Props {
   videos: BroadcastVideo[]
@@ -7,21 +8,30 @@ interface Props {
 
 export function BroadcastGrid({ videos }: Props) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
       {videos.map((video) => (
-        <div
+        <article
           key={video._id}
-          className="rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1"
-          style={{ boxShadow: '0 4px 24px rgba(107,75,161,0.1)' }}
+          className="group flex h-full flex-col overflow-hidden rounded-2xl border bg-white transition-all duration-300 hover:-translate-y-1"
+          style={{
+            borderColor: 'rgba(155,35,53,0.12)',
+            boxShadow: '0 18px 50px rgba(90,15,26,0.08)',
+          }}
         >
-          <YouTubeEmbed
-            youtubeUrl={video.youtubeUrl}
-            title={video.title}
-          />
+          <div
+            className="p-2"
+            style={{ background: 'linear-gradient(135deg, rgba(155,35,53,0.08), rgba(224,123,42,0.12))' }}
+          >
+            <YouTubeEmbed
+              youtubeUrl={video.youtubeUrl}
+              title={video.title}
+              className="shadow-sm ring-1 ring-black/5"
+            />
+          </div>
 
-          <div className="p-4 bg-white border border-t-0 border-[rgba(107,75,161,0.1)] rounded-b-2xl">
+          <div className="flex flex-1 flex-col p-5">
             <h4
-              className="font-serif font-bold text-sm leading-snug mb-1"
+              className="font-serif text-lg font-bold leading-snug"
               style={{ color: 'var(--deep-indigo)' }}
             >
               {video.title}
@@ -29,17 +39,18 @@ export function BroadcastGrid({ videos }: Props) {
 
             {video.description && (
               <p
-                className="text-xs leading-relaxed mb-2"
-                style={{ color: 'var(--muted,#6b5e7e)' }}
+                className="mt-2 line-clamp-3 text-sm leading-relaxed"
+                style={{ color: 'rgba(90,15,26,0.68)' }}
               >
                 {video.description}
               </p>
             )}
 
             <time
-              className="text-xs"
-              style={{ color: 'var(--soft-lavender)' }}
+              className="mt-auto flex items-center gap-2 pt-5 text-xs font-semibold uppercase tracking-[0.14em]"
+              style={{ color: 'var(--gold-dark)' }}
             >
+              <CalendarDays size={14} strokeWidth={1.8} />
               {video.publishDate
                 ? new Date(video.publishDate).toLocaleDateString('en-IN', {
                     month: 'short',
@@ -49,7 +60,7 @@ export function BroadcastGrid({ videos }: Props) {
                 : 'Date unavailable'}
             </time>
           </div>
-        </div>
+        </article>
       ))}
     </div>
   )

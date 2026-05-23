@@ -2,6 +2,7 @@ interface YouTubeEmbedProps {
   youtubeUrl: string
   title: string
   large?: boolean
+  className?: string
 }
 
 function toEmbedUrl(url: string) {
@@ -41,13 +42,14 @@ export function YouTubeEmbed({
   youtubeUrl,
   title,
   large = false,
+  className = '',
 }: YouTubeEmbedProps) {
   const embedUrl = toEmbedUrl(youtubeUrl)
 
   if (!embedUrl) {
     return (
       <div
-        className="w-full aspect-video rounded-xl flex items-center justify-center text-white/40 text-sm"
+        className={`w-full aspect-video rounded-xl flex items-center justify-center text-white/60 text-sm ${className}`}
         style={{ background: 'var(--deep-indigo)' }}
       >
         Invalid YouTube URL
@@ -57,9 +59,8 @@ export function YouTubeEmbed({
 
   return (
     <div
-      className={`w-full ${large ? 'rounded-2xl' : 'rounded-xl'} overflow-hidden`}
+      className={`w-full ${large ? 'rounded-[1.35rem]' : 'rounded-xl'} overflow-hidden bg-black ${className}`}
       style={{
-        boxShadow: '0 8px 40px rgba(224,123,42,0.22)',
         aspectRatio: '16/9',
       }}
     >
